@@ -1,0 +1,732 @@
+*,*::before, *::after{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Lato", sans-serif;
+    position: relative;
+}
+nav{
+    background-color: #111;
+    color: white;
+}
+div.topnavcontainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    padding: 15px;
+    color: white;
+}
+div.payment{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+}
+
+div.topnavcontainer span.header{
+    font-size: 2em;
+    font-weight: 700;
+    padding: 15px;
+}
+div.topnavcontainer span.limited{
+    font-size: 20px;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+}
+
+div.topnavcontainer  div.inputsearch{
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+div.topnavcontainer div.inputsearch input.search{
+    border: none;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+div.topnavcontainer div.inputsearch img{
+    aspect-ratio: auto 20 / 20;
+}
+/* div.topnavcontainer input.search{
+    padding: 1px 2px;
+    border: none;
+    background-color: transparent;
+} */
+
+div.lowernavcontainer  ul.lowernavitem{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    padding: 15px;
+}
+div.lowernavcontainer  ul.lowernavitem li.navitem{
+    
+    list-style: none;
+    color: white;
+}
+
+div.lowernavcontainer  ul.lowernavitem li.navitem a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.1rem;
+
+}
+div.payment{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    color: black;
+    display: none;
+    border: none;
+    padding: 20px;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    box-shadow:  0px 0px 13px 2px rgb(0 0 0 / 30%)
+}
+
+div.payment label{
+    font-weight: lighter;
+    margin-bottom: 7px;
+}
+div.payment h1.payTitle{
+    opacity: 0.3;
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+div.payment input{
+    border: none;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 0, 0, 0.5);
+    
+    margin: 3px;
+
+  
+}
+/* done */
+div.slider{
+  
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); */
+  overflow: hidden;
+  
+    width: 100vw;
+    background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
+
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+
+
+  
+}
+/* done */
+div.slider div.sliderwrapper{
+    /* width: 500vw; */
+   
+    
+
+
+    display: flex;
+    flex-direction: row;
+    transition: all 1s ease-out;
+    
+    width:  500vw;
+} 
+/* done */
+div.slider div.sliderWrapper >div.sliderItem{
+  
+ 
+    width: 100vw;
+    color: white;
+    display: grid;
+    position: relative;
+    place-items: center;
+ 
+    /* border: 1px solid red;/ */
+   
+    
+   
+
+}
+/* image properties  DONE*/
+div.slider div.sliderWrapper div.sliderItem img.sliderImg{
+    z-index: 1;
+    
+
+}
+
+/* round backgroundcolor DONE*/
+div.slider div.sliderWrapper div.sliderItem div.greenHouse {
+    width: 750px;
+    z-index: 0;
+    height: 750px;
+    position: absolute;
+    border-radius: 50%;
+    /* background-color: rgb(4, 32, 4); */
+    background-color: rgb(4, 32, 4);
+    
+}
+div.slider div.sliderWrapper div.sliderItem h1.sliderTitle{
+
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+div.slider div.sliderWrapper div.sliderItem h2.sliderPrice{
+
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    color: black;
+    background: white;
+    
+    z-index: 1;
+}
+div.slider div.sliderWrapper div.sliderItem a{
+    position: absolute;
+    display: inline-block;
+    
+  top: 50%;
+  right: 10%;
+  font-size: 30px;
+  /* padding: 7px; */
+  font-weight: 900;
+  color: black;
+  /* border: 1px solid black; */
+  
+  z-index: 1;
+  cursor: pointer;
+}
+ /* slider button */
+div.slider div.sliderWrapper div.sliderItem a button{
+    color: white;
+    background-color: black;
+    display: inline-block;
+    padding: 5px;
+    font-size: 1em;
+    width: 100%;
+    
+    cursor: pointer;
+} 
+
+/* div.containpayment{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: grid;
+    place-items: center;
+    border: 1px solid blue;
+}    */
+
+  
+    
+/* div.containpayment div.payment{
+    position: absolute;
+    border: 1px solid red;
+} */
+
+div.showcase div.showcaseitem img.position{
+    object-position: 40%;
+}
+div.slider div.sliderWrapper div.sliderItem div {
+    width: 750px;
+    z-index: 0;
+    height: 750px;
+    position: absolute;
+    border-radius: 50%;
+    /* background-color: rgb(4, 32, 4); */
+    /* background-color: rgb(4, 32, 4); */
+}
+div.payment input:focus{
+    border: 1px solid black;
+    opacity: 1;
+}
+div.payment div.cardInfo{
+    display: flex;
+    gap: 3px;
+}
+div.payment div.cardInfo input.sm{
+   width: 140px;
+   
+
+}
+div.payment input.payinput{
+    padding: 12px;
+   
+
+}
+div.payment span.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.5;
+    display: inline-block;
+    margin-right: 7px;
+    background-color: grey;
+    color: black;
+    padding: 5px;
+    font-weight: 300;
+    color: white;
+    cursor: pointer;
+}
+div.payment button.payButton{
+    display: block;
+    background-color: #369e62;
+    padding: 15px;
+    margin-top: 12px;
+    border: none;
+    color:white
+}
+footer{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    padding: 7px;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    
+}
+footer div.footerLeft{
+  flex-basis:  3;
+  flex-shrink: 1;
+  display: flex;
+  /* flex: 2; */
+  /* border: 8px solid red; */
+  /* padding: 12px; */
+  /* flex-grow: 1; */
+  
+  
+  
+}
+footer div.footerLeft div.linksection:nth-child(1) >div.linkitem{
+    text-transform: capitalize;
+}
+footer div.footerLeft div.linksection:nth-child(3) >div.linkitem{
+    text-transform: capitalize;
+}
+footer div.footerLeft div.linksection:nth-child(2) >div.linkitem{
+text-transform: capitalize;
+}
+footer div.footerLeft div.linksection:nth-child(2) >div.linkitem:nth-child(4){
+    /* color: blue;  */
+    text-transform: uppercase;
+}
+footer div.footerRight{
+    flex-basis: 1;
+    flex-shrink: 0;
+    /* flex: 1; */
+  
+    /* border: 8px solid blue; */
+    padding-top: 17px;
+    /* padding: 12px; */
+    
+
+
+  }
+  footer div.footerLeft div.linksection{
+      /* border: 1px solid green; */
+      flex-basis: 1;
+      flex-grow: 1;
+      padding: 10px;
+  }
+  footer div.footerLeft h4{
+      font-weight: bolder;
+     
+      padding: 5px;
+
+      
+  }
+ 
+  footer div.footerLeft div.linksection div.linkitem{
+      /* border: 1px solid indianred; */
+      padding: 10px;
+
+
+    ;
+    color: gray;
+    cursor: pointer;
+}
+  
+  footer div.footerRight div.linksection2 h4.subscribe{
+      width: 150px;
+      /* border: 2px solid red; */
+      /* text-align: center; */
+  }
+
+  footer div.footerRight div.linksection2 div.holdinputBtn{
+      display: flex;
+      flex-direction: column;
+      /* border: 1px solid green; */
+  }
+  footer div.footerRight div.linksection2 div.holdinputBtn input{
+      padding: 5px;
+      margin-top:  12px; 
+      width: 200px;
+  }   
+  footer div.footerRight div.linksection2 div.holdinputBtn button{
+      width: 55px;
+      padding: 3px;
+      background-color: black;
+      color: white;
+      font-weight: 500;
+  }
+  footer div.footerRight div.linksection2 h4.follow{
+      padding: 6px;
+      font-weight: 700;
+  }
+  div.footerRight div.footercontact > img.fIcon{
+     width: 20px;
+     height: 20px;
+     margin-right: 10px;
+  }
+  div.footerRight div.linksection2 div.end{
+    font-weight: 500;
+    font-size: 14px;
+
+  }
+  div.productcontainer{
+    height: 600px;
+    width: 100vw;
+    /* height: 600px; */
+    background-color: whitesmoke;
+    /* border: 1px solid blue; */
+    /* border: none; */
+    position: relative;
+    margin-bottom: 12px;
+    
+
+ 
+
+    
+}
+
+div.productcontainer img{
+    width: 40%;
+  
+    
+    
+    
+   
+ 
+}
+
+div.productcontainer div.productcontent{
+    width: 50%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: space-between;
+   
+
+    
+    top: 0;
+    right: 0;
+   
+    /* border: 1px solid yellow; */
+    padding: 50px;
+    
+    
+
+
+}
+div.productcontainer div.productcontent h1.producttitle{
+    font-size: 75px;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+div.productcontainer div.productcontent div.productdescription{
+ 
+    color: grey;
+}
+
+div.productcontainer div.productcontent div.sizes{
+    display:flex
+}
+div.productcontainer div.productcontent div.colors{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: none;
+    display: flex;
+}
+div.productcontainer div.productcontent div.colors div.black{
+   content: "";
+   padding: 12px;
+   background-color: black;
+  
+   width: 25px;
+   height: 32px;
+   border-radius: 4px;
+   margin-right: 7px;
+height: auto;
+}
+div.productcontainer div.productcontent div.colors div.blue{
+    content: "";
+    padding: 10px;
+    background-color: blue;
+    border-radius: 4px;
+   
+    width: 32px;
+    height: 25px;
+ height: auto;
+ }
+ div.promotecontainer{
+     display: flex;
+     margin-bottom: 12px;
+ }
+
+ div.featurecontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+}
+     
+
+ 
+ div.featurecontainer >div.featureitemcontainer{
+     padding: 8px;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     justify-content: space-between;
+     text-align: center;
+     
+ }
+ div.featurecontainer div.featureitemcontainer img{
+     width: 60px;
+     height: 60px;
+ }
+ /*This is where i am */
+ div.featurecontainer div.featureitemcontainer span.featuredetail{
+    color: gray;
+    width: 50%;
+    height: 100px;
+ }
+
+ div.featurecontainer div.featureitemcontainer span.featureheader{
+     font-weight: 600;
+     text-transform: uppercase;
+     font-size: 20;
+     text-align: center;
+     margin: 20;
+     
+     /* border: 3px solid blue; */
+     
+ }
+
+ div.showcase{
+     margin-top: 10px;
+     /* height: 500px; */
+     background-color: black;
+     display: flex;
+     color: white;
+     text-align: center;
+
+     text-transform: capitalize;
+     /* align-items: center; */
+ }
+ div.showcase div.showcaseitem{
+     height: 500px;
+ }
+ div.showcase div.showcaseitem img.showimage{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 40%;
+ }
+ div.showcase div.showcasetext h1.first{
+
+     font-size: 17px;
+     font-weight: 300px;
+     text-transform: uppercase;
+     box-sizing: border-box;
+     padding-top: 25px;
+     text-align: center;
+
+    }
+
+    /* div.showcaseitem > img{
+         width: 100%;
+    } */
+ div.showcase >div{
+     flex-basis: 33.3%;
+     border: 1px solid white;
+ }
+ div.promotecontainer > div{
+    padding: 30px;
+    flex-basis: calc(100%/3);
+    /* border: 1px solid red; */
+}
+ 
+ div.promotecontainer div.campaign img{
+    width: 100%; 
+    /* border: 4px solid blue; */
+ }
+ div.showcase div.showcasetext{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+ }
+ div.promotecontainer  div.campaign
+ div.showcase div.showcasetext >h1{
+   
+     text-align: center;
+     font-weight: 900;
+     /* font-size: 40px; */
+     box-sizing: border-box;
+     
+ }
+ div.showcase button.showcasebutton{
+     height: 45px;
+     /* width: 45px; */
+     /* width: 100px; */
+    
+     padding: 14px;
+     font-weight: bold;
+ }
+ div.sliderItem div.greenHouse{
+    background-color: #369e62;
+  }
+  div.sliderItem div.white {
+    background-color: pink;
+  }
+  div.sliderItem div.teal {
+    background-color: teal;
+  }
+div.sliderItem div.cornflowerblue  {
+    background-color: cornflowerblue;
+  }
+  div.sliderItem div.cornsilk {
+    background-color: cornsilk;
+  }
+h2.sliderPrice{
+    color: black;
+}
+div.productcontainer div.productcontent div.sizes  > div{
+
+display: inline-block;
+width: 30px;
+background-color: white;
+height: auto;
+border: 1px solid black;
+justify-content: flex-start;
+margin-top: 12px;
+font-size: 1.1em;
+margin-left: 0;
+margin-right: 10px;
+padding-top: 12px;
+padding-bottom: 12px;
+padding-right: 18px;
+padding-left: 18px;
+text-align: center;
+font-weight: 200;
+cursor: pionter;
+}
+div.productcontainer div.productcontent div.sizes  > div:hover{
+    background-color: grey;
+}
+/* div.size:hover{
+    background-color: blue;
+} */
+div.productcontainer div.productcontent{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    padding: 50px;
+}
+div.campaign img.image{
+    object-fit: cover;
+    height: 350px;
+}
+@media screen and (max-width: 480px){
+img.sliderImg {
+    width: 90%;
+}
+div.slider {
+    clip-path: none;
+}
+div.featurecontainer{
+   
+    clip-path: none;
+}
+
+div.featureitemcontainer{
+    clip-path: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.featurecontainer{
+    flex-direction: column;
+}
+div.slider div.sliderWrapper div.sliderItem a{
+    top: auto;
+    bottom: 0;
+}
+div.slider div.sliderWrapper div.sliderItem h2.sliderPrice{
+    top: 0;
+}
+div.sliderItem div.sliderTitle{
+    top: 0;
+}
+div.productcontent{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 0;
+}
+div.productcontent img.productimage{
+  
+    width: 80%;
+}
+div.productcontainer div.productcontent{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 0;
+}
+h1.producttitle{
+    
+        font-size: 50px;
+        margin: 0;
+
+}
+}
